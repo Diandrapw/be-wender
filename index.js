@@ -9,7 +9,7 @@ const taskRoutes = require("./src/routes/tasks");
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://fe-wender.vercel.app', 'https://fe-wender-2t256dac7-diandrapws-projects.vercel.app'],
+  origin: '*',
   methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
